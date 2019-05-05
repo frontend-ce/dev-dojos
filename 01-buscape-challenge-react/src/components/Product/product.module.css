@@ -1,0 +1,185 @@
+
+.product {
+    display: flex;
+    align-items: stretch;
+    background-color: #fff;
+    padding: var(--main-spacing);
+    
+}
+
+@media screen and (max-width: 568px ) {
+   .product {
+       flex-direction: column;
+       align-items: center;       
+   } 
+}
+
+.infos {
+    flex-basis: 55%;
+    text-align: left;
+    padding: var(--main-spacing) 40px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 768px ) {
+    .infos {
+        padding: var(--main-spacing) 0;
+    } 
+ }
+
+
+.title {
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: var(--main-spacing);
+    padding-bottom: var(--main-spacing);
+    border-bottom: 1px solid #e5e5e5;
+    color: var(--main-text-color);
+
+    line-height: 1.3;
+}
+
+.favorite {
+    display: inline-block;
+    align-items: center;
+    width: 20px;
+    margin-left: 5px;
+    border: 0;
+    background-color: transparent;
+    fill: var(--secondary-color);
+    cursor: pointer;
+}
+
+.favorite:hover {
+    stroke: var(--secondary-color);
+}
+
+.wrapActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px ) {
+    .wrapActions {
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+ }
+
+
+.priceTitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.priceTitle small {
+    font-size: 70%;
+}
+
+.priceSubtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-text-color);
+    margin-top: 5px;
+}
+
+.priceSubtitle b {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.btnAdd {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 15px 20px;
+    border: 0;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 768px ) {
+    .btnAdd {
+        margin-top: 15px;        
+    } 
+ }
+
+@media screen and (max-width: 568px ) {
+    .btnAdd {
+        width: 100%;      
+    } 
+}
+
+
+.btnAdd:hover {
+    background-color: #22c552;
+}
+
+.btnRemove {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 22px;
+    border: 0;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.btnRemove:hover {
+    color: #fff;
+    background-color: #d62a33;
+}
+
+.simple {
+    position: relative;
+    background-color: #c49d00;
+}
+
+.simple img {
+    max-width: 90px;
+    height: auto;
+}
+
+.simple .infos {
+    padding: 0;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.simple .title {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.simple .priceTitle {
+    font-size: 16px;
+    color: #000;
+}
+
+.simple .priceTitle small {
+    font-size: 100%;
+}
+
+.simple .priceSubtitle {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+}
+
+.simple .priceSubtitle b {    
+    color: #000;
+}

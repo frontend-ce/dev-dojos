@@ -1,0 +1,14 @@
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.item { 
+    margin-top: 35px; 
+    padding: 0 10px;
+}
+
+.simple .item {
+    margin-top: 5px;
+    padding: 0;
+}

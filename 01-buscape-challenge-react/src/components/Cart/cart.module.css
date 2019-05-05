@@ -1,0 +1,27 @@
+.cart {
+    background-color: #daaf00;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.subtotal {
+    text-align: right;
+    padding: var(--main-spacing);
+    font-weight: 600;
+}
+
+.subtotal p {
+    margin-top: 5px;
+}
+
+.title {
+    display: block;
+    border-bottom: 1px solid #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
