@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
+import "flexboxgrid/css/index.min.css";
 import "./App.scss";
 import ClimaLocal from "./components/ClimaLocal";
 import BuscaCidades from "./components/BuscarCidades";

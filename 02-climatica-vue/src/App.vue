@@ -1,36 +1,110 @@
 <template>
   <div id="app">
-    <Weather />
+    <Weather/>
   </div>
 </template>
 
 <script>
-import Weather from './components/Weather.vue';
+import Weather from "./components/Weather.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Weather
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #fff;
 }
 
-body{
-   background-image: linear-gradient(to bottom, #ff8a00, #ff9600, #ffa100, #ffad00, #ffb800);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height:100%;
+body {
+  min-height: 100vh;
+}
+body {
+  padding: 15px;
+  background: #606c88; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3f4c6b,
+    #606c88
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3f4c6b,
+    #606c88
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body * {
+  box-sizing: border-box;
+}
+h1 {
+  color: white;
+}
+.weather-container-content h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.weather-container-content p {
+  margin: 0;
+}
+.weather-container-content span {
+  display: inline-block;
+  margin: 5px;
 }
 
+.weather-container-content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
 
+.search-city {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #606c88;
+  border: none;
+}
+
+::placeholder {
+  color: #606c88;
+}
+
+ul {
+  list-style-type: none;
+  max-width: 595px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  margin: 0 auto;
+  background: none;
+  cursor: pointer;
+}
+
+li:hover {
+  border: 1px solid white;
+  background: #fff;
+  color: #606c88;
+}
 </style>
